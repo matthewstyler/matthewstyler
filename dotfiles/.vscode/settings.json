@@ -18,4 +18,46 @@
     "ruby.intellisense": "rubyLocate",
     "editor.formatOnSaveTimeout": 1500,
     "files.autoSave": "afterDelay",
+
+    "java.jdt.ls.java.home": "/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home",
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-21",
+            "path": "/Library/Java/JavaVirtualMachines/temurin-21.jdk/Contents/Home",
+            "default": true
+        }
+    ],
+    "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx24G -Xms100m -Xlog:disable",
+    "java.completion.favoriteStaticMembers": [
+            "java.util.stream.Collectors.*",
+            "org.junit.Assert.*",
+            "org.junit.Assume.*",
+            "org.junit.jupiter.api.Assertions.*",
+            "org.junit.jupiter.api.Assumptions.*",
+            "org.junit.jupiter.api.DynamicContainer.*",
+            "org.junit.jupiter.api.DynamicTest.*",
+            "org.mockito.Mockito.*",
+            "org.mockito.ArgumentMatchers.*",
+            "org.mockito.Answers.*"
+    ],
+    "launch": {
+        "version": "0.2.0",
+        "configurations": [
+            {
+                "type": "java",
+                "name": "Launch Current File",
+                "request": "launch",
+                "mainClass": "${file}"
+            },
+            {
+                "type": "java",
+                "name": "Local Debug",
+                "request": "attach",
+                "hostName": "localhost",
+                "port": 8000,
+                "projectName": "current"
+            }
+        ]
+    }
+            
 }
