@@ -1,0 +1,21 @@
+{
+    "ruby.format": "rubocop",
+    "ruby.useLanguageServer": true,
+    "[ruby]" : {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "Shopify.ruby-lsp",
+        "editor.formatOnType": true,
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "files.trimTrailingWhitespace": true,
+        "files.insertFinalNewline": true,
+        "files.trimFinalNewlines": true,
+        "editor.rulers": [
+            120
+        ],
+        "editor.semanticHighlighting.enabled": true
+    },
+    "ruby.intellisense": "rubyLocate",
+    "editor.formatOnSaveTimeout": 1500,
+    "files.autoSave": "afterDelay",
+}
